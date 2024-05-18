@@ -1,0 +1,63 @@
+/* Стили для таблицы */
+.normal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Стили для заголовков таблицы */
+.normal-table th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+/* Стили для ячеек таблицы */
+.normal-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border: 1px solid black;
+    /* Добавляем свойства для переноса текста */
+    word-wrap: break-word; /* Для поддержки старых браузеров */
+    overflow-wrap: break-word; /* Для современных браузеров */
+}
+
+/* Стили для четных строк таблицы */
+.normal-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Стили для содержимого модального окна */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 300px; /* Уменьшаем максимальную ширину модального окна */
+    width: 80%; /* Ширина в процентах, чтобы подстраивалась под размер экрана */
+    max-height: 60vh; /* Уменьшаем максимальную высоту модального окна */
+    overflow-y: auto; /* Включаем вертикальную прокрутку, если содержимое больше */
+    position: relative; /* Позиционируем содержимое относительно модального окна */
+    word-wrap: break-word; /* Перенос текста */
+    top: 50%; /* Перемещаем содержимое на 50% от верхнего края */
+    left: 50%; /* Перемещаем содержимое на 50% от левого края */
+    transform: translate(-50%, -50%); /* Центрируем содержимое относительно родительского элемента */
+}
+
+/* Стили для кнопки закрытия модального окна */
+.close {
+    color: #aaa;
+    position: absolute; /* Абсолютное позиционирование относительно содержимого модального окна */
+    top: 8px;
+    right: 16px;
+    font-size: 24px; /* Уменьшаем размер шрифта кнопки закрытия */
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
