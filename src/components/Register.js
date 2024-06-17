@@ -17,7 +17,7 @@ const Register = () => {
             return;
         }
         try {
-            await axios.post('http://localhost:5000/register', {
+            await axios.post('https://diplom-server-wine.vercel.app/register', {
                 username,
                 password,
                 firstName, // Обновляем отправляемые данные для включения имени
