@@ -81,7 +81,7 @@ const Dashboard = () => {
             setEmail('');
         } catch (error) {
             console.error('Error placing order:', error);
-            alert('Failed to place order');
+            alert('Ошибка ввода данных');
         }
     };
 
