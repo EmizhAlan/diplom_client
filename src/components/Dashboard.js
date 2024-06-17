@@ -64,7 +64,7 @@ const Dashboard = () => {
 
         const token = localStorage.getItem('token'); // Получаем токен из локального хранилища
         try {
-            await axios.post('http://localhost:5000/order', {
+            await axios.post('https://diplom-server-wine.vercel.app/order', {
                 token,
                 product,
                 productos,
