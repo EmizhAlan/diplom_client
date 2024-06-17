@@ -23,11 +23,11 @@ const Register = () => {
                 firstName, // Обновляем отправляемые данные для включения имени
                 lastName // Обновляем отправляемые данные для включения фамилии
             });
-            alert('User registered successfully');
+            alert('Регистрация прошла успешно');
             navigate('/login');
         } catch (error) {
             console.error('Registration error:', error);
-            alert('Registration failed');
+            alert('Ошибка регистрации');
         }
     };
 
