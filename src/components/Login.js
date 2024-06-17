@@ -29,7 +29,7 @@ const Login = ({ setToken, setIsAuthenticated }) => {
             }
         } catch (error) {
             console.error('Login error', error);
-            alert('Invalid credentials');
+            alert('Ошибка входа');
         }
     };
 
