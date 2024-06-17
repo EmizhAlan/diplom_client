@@ -72,7 +72,7 @@ const Dashboard = () => {
                 phoneNumber,
                 email
             });
-            alert('Order placed successfully');
+            alert('Заявка успешно добавлена');
             // Очищаем поля после успешного размещения заказа
             setProduct('');
             setProductos('');
