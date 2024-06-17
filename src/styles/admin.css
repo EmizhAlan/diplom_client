@@ -61,3 +61,15 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    /* Добавляем адаптивность для таблицы */
+    .normal-table th,
+    .normal-table td {
+        padding: 8px; /* Уменьшаем внутренний отступ */
+        font-size: 12px; /* Уменьшаем размер шрифта */
+        word-break: break-all; /* Разрыв слов при нехватке места */
+        overflow-wrap: break-word; /* Перенос слов на новую строку */
+    }
+}

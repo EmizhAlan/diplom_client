@@ -42,3 +42,42 @@
 .nav-links button:focus {
     outline: none;
 }
+
+/* Адаптивность */
+@media (max-width: 1000px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a, .nav-links button {
+        margin: 5px 0;
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo a {
+        font-size: 1.2em;
+    }
+
+    .nav-links a, .nav-links button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

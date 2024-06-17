@@ -153,9 +153,9 @@ const Home = () => {
                 </div>
                 <div className="social-links">
                     <p>Мы в социальных сетях:</p>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Телеграм</a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">ВК</a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Одноклассники</a>
+                    <a href="https://web.telegram.org/a/#-1002175133639" target="_blank" rel="noopener noreferrer">Телеграм</a>
+                    <a href="https://vk.com/club224839008" target="_blank" rel="noopener noreferrer">ВК</a>
+                    <a href="https://ok.ru/" target="_blank" rel="noopener noreferrer">Одноклассники</a>
                 </div>
                 <div className="additional-info">
                     <p>Дополнительная информация: График работы - Пн-Пт с 9:00 до 18:00</p>

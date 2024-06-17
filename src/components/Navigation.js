@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/style.css';
+import '../styles/navigation.css';
 
 const Navigation = ({ isAuthenticated, isAdmin, onLogout }) => {
     return (

@@ -22,14 +22,14 @@ const Dashboard = () => {
 
     const exportToExcel = () => {
         const data = orders.map(order => ({
-            'First Name': order.userId ? order.userId.firstName : '',
-            'Username': order.userId ? order.userId.username : '',
-            'Last Name': order.userId ? order.userId.lastName : '',
-            'Product': order.product,
+            'Фамилия': order.userId ? order.userId.firstName : '',
+            'Имя': order.userId ? order.userId.username : '',
+            'Отчество': order.userId ? order.userId.lastName : '',
+            'Продукт': order.product,
             'Описание': order.productos,
-            'Quantity': order.quantity,
-            'Phone Number': order.phoneNumber,
-            'Email': order.email,
+            'Количество': order.quantity,
+            'Номер телефона': order.phoneNumber,
+            'Почта': order.email,
         }));
         const ws = XLSX.utils.json_to_sheet(data);
         const wb = XLSX.utils.book_new();

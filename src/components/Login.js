@@ -12,7 +12,7 @@ const Login = ({ setToken, setIsAuthenticated }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://diplom-server-pi.vercel.app/login', { username, password, firstName, lastName });
+            const response = await axios.post('http://localhost:5000/login', { username, password, firstName, lastName });
             console.log('Login response:', response); // Логирование ответа от сервера
 
             if (response.data.token) {
